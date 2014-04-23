@@ -1,0 +1,20 @@
+{
+    "name": "task/phpspec",
+    "description": "PhpSpec plugin for Task",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mike Fisher",
+            "email": "mike@mbfisher.com"
+        }
+    ],
+    "require": {
+        "phpspec/phpspec": "2.0.*@dev",
+        "task/console": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Task\\Plugin\\": "src/"
+        }
+    }
+}
