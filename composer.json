@@ -10,7 +10,7 @@
     ],
     "require": {
         "phpspec/phpspec": "2.0.*@dev",
-        "task/console": "dev-master"
+        "task/console": "~0.1"
     },
     "autoload": {
         "psr-4": {
