@@ -1,3 +1,6 @@
 vendor/
 composer.lock
 /coverage/
+coverage.xml
+coveralls-upload.json
+.env

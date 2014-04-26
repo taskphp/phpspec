@@ -2,6 +2,7 @@ task/phpspec
 ============
 
 [![Build Status](https://travis-ci.org/taskphp/phpspec.svg?branch=master)](https://travis-ci.org/taskphp/phpspec)
+[![Coverage Status](https://coveralls.io/repos/taskphp/phpspec/badge.png?branch=master)](https://coveralls.io/r/taskphp/phpspec?branch=master)
 
 Example
 =======
