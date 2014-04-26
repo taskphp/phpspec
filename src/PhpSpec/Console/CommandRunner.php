@@ -9,7 +9,16 @@ class CommandRunner extends BaseCommandRunner
 {
     public function findCommand(Application $app, $commandName)
     {
+        if ( ! $app instanceof \PhpSpec\Console\Application) {
+            throw new \InvalidArgumentException('$app should be an instance of \PhpSpec\Console\Application');
+        }
+
         $commandClass = $this->getCommandClassName($commandName);
+
+        if ( ! class_exists($commandClass)) {
+            throw new \RuntimeException("Class {$commandClass} does not exist");
+        }
+
         return new $commandClass;
     }
 
